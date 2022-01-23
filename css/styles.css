@@ -35,7 +35,7 @@ body {
     letter-spacing: 2px;
     text-align: center;
     color: #fff;
-    padding: 7px 0 ;
+    padding: 7px 0;
 }
 
 .header_wrapper {
@@ -46,17 +46,10 @@ body {
     margin: 15px 20.54px 15px 11px;
 }
 
-/* .header_logo {} */
-
 .header_logo_svg {
     max-width: 160px;
     width: 100%;
 }
-
-/* .header_nav {
-    display: flex;
-    justify-content: space-between;
-} */
 
 .header_nav_ul {
     display: flex;
@@ -104,4 +97,84 @@ body {
 .header_icon {
     width: 16.92px;
     margin-right: 11.08px;
+}
+
+/* SECTION */
+
+.welcome {
+    margin-top: 95px;
+
+    background-image: url('.../img/Welcome_back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome_div {
+    margin: auto;
+    margin-top: 53px;
+}
+
+.welcome_div_h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 51px;
+    /* identical to box height, or 115% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.welcome_div_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #000000;
+}
+
+.welcome_buttons {
+    margin: auto;
+    margin-top: 159px;
+}
+
+.welcome_buttons_a {
+    width: 201px;
+    border-radius: 35px;
+    /*35px*/
+    background-color: #FF4A32;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+}
+
+.welcome_footer {
+    margin-top: 693px;
+    width: 100%;
+    background-color: #000;
+}
+
+.welcome_footer_logos {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome_footer_a:nth-child(n + 2) {
+    margin-left: 122px;
 }
