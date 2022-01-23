@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'Roboto', sans-serif;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*(../fonts/Roboto-Regular.ttf);*/
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /*(../fonts/Roboto-Regular.ttf);*/
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -60,7 +67,7 @@ body {
 }
 
 .header_nav_ul-li {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -78,7 +85,7 @@ body {
 .header_nav_ul-li_a {
     text-decoration: none;
 
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -102,33 +109,45 @@ body {
 /* SECTION */
 
 .welcome {
-    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 
-    background-image: url('.../img/Welcome_back.png');
+    background-image: url('../img/Welcome_back.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .welcome_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin: auto;
     margin-top: 53px;
 }
 
-.welcome_div_h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+.welocme_div_h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+
     /* identical to box height, or 115% */
 
     text-align: center;
 
     color: #000000;
+
+    padding-bottom: 14px;
 }
 
-.welcome_div_p {
-    font-family: Roboto;
+.welocme_div_p {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -142,17 +161,24 @@ body {
 }
 
 .welcome_buttons {
+    display: flex;
     margin: auto;
-    margin-top: 159px;
+    margin-top: 22px;
 }
 
 .welcome_buttons_a {
+    display: flex;
+    justify-content: center;
+    
     width: 201px;
+    margin-right: 12px;
+    padding: 5px 0;
+    
     border-radius: 35px;
-    /*35px*/
+    
     background-color: #FF4A32;
 
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -161,11 +187,15 @@ body {
     text-align: center;
     color: #fff;
 
+    text-decoration: none;
+
 }
 
 .welcome_footer {
-    margin-top: 693px;
-    width: 100%;
+    display: flex;
+    margin-top: 623px;
+    padding-top: 18px;
+    width: 100vw;
     background-color: #000;
 }
 
@@ -177,4 +207,5 @@ body {
 
 .welcome_footer_a:nth-child(n + 2) {
     margin-left: 122px;
+    text-decoration: none;
 }
