@@ -26,7 +26,8 @@ body {
 /* HEADER */
 
 .header {
-    width: 100vw;
+    max-width: 1920px;
+    width: 100%;
 }
 
 .header_note {
@@ -111,7 +112,8 @@ body {
 .welcome {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 1920px;
+    width: 100%;
 
     background-image: url('../img/Welcome_back.png');
     background-repeat: no-repeat;
@@ -195,17 +197,20 @@ body {
     display: flex;
     margin-top: 623px;
     padding-top: 18px;
-    width: 100vw;
+    width: 100%;
     background-color: #000;
 }
 
-.welcome_footer_logos {
+.welcome_footer_img {
     display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.welcome_footer_a:nth-child(n + 2) {
-    margin-left: 122px;
+.welcome_footer_img_a:nth-child(n + 2) {
+    /*margin-left: 122px;*/
     text-decoration: none;
 }
