@@ -516,6 +516,8 @@ body {
     height: 2px;
     background-color: #CFCFCF;
     margin-top: 25px;
+
+    align-self: center;
 }
 
 .products_item {
@@ -525,6 +527,11 @@ body {
 
     width: 100%;
     margin-top: 42px;
+}
+
+.lot:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 5px rgba(41, 44, 61, 0.34);
 }
 
 .lot_a {
@@ -557,7 +564,10 @@ body {
     justify-content: space-between;
 }
 
-.lot_name, .act_price, .old_price, .sold_out {
+.lot_name,
+.act_price,
+.old_price,
+.sold_out {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
